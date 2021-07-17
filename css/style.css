@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Poppins:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'TTCommons';  
+  src: url('../fonts/TTCommons-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'TTCommons-light';  
+  src: url('../fonts/TTCommons-Light.ttf')  format('truetype');
+}
+
+:root {
+  --current: #033033;
+}
+
+body {  
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-light {
+  font-family: 'TTCommons-light', sans-serif !important;
+}
+
+p, h2, a, li {
+  font-family: 'TTCommons', sans-serif !important;
+}
+
+span {
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo-red {
+  fill: var(--current);
+}
+
+.text-current {
+  color: var(--current);
+  /*background-image: linear-gradient(0deg, rgba(248,213,213,0.00) 0%, #fff7e4 28%);*/
+}
+
+.gradient {
+  background: var(--current);
+  /*background: rgb(255,247,228);
+  background: radial-gradient(circle, rgba(255,247,228,1) 28%, rgba(248,213,213,0) 100%);*/
+}
+
+.current-color {
+  color: var(--current);
+}
+
+.video-js .vjs-big-play-button {
+  border: none !important;
+}
+
+.bg-current-color  {
+  background-color: rgba(255,245,247,var(--bg-opacity)) !important;
+  color: var(--current);
+}
+
+.containerInvite {
+  background: url(../img/bg-footer.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#hero-container {
+  /*background: url(img/cta-hero-1.jpg);
+  background-position: center;
+  background-size: cover;*/
+  background-color: white;
+}
+
+#header-flex {
+  background: url(../img/app.png);
+  background-position: center;
+  background-size: cover;  
+}
+
+#hero-about {
+  background: url(../img/hero-about.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#hero-groceries {
+  /*background: url(img/cta-hero.jpg);*/
+  background-position: center;
+  background-size: cover;
+}
+
+#hero-faq {
+  background: url(../img/hero-faq.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#history {
+  background: url(../img/about-hero.jpg);
+  background-position: right;
+  background-size: cover;
+}
+
+#form-groceries span, label,   input {
+  font-family: 'TTCommons', sans-serif !important;
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.10);
+}
+
+.text-shadow-md {
+ text-shadow: 0 15px 30px rgb(0 0 0 / 13%), 0 5px 15px rgb(0 0 0 / 74%);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 15px 30px rgb(0 0 0 / 72%), 0 5px 15px rgb(0 0 0 / 74%);
+}
+
+.text-shadow-none {
+  text-shadow: none;
+}
+
+svg, ::after, ::before {
+  box-sizing: unset;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e2e8f0;
+  }
+/* custom non-Tailwind CSS */
+
+@media (max-width: 576px) {
+  .content {
+      padding-top: 51px;
+  }
+}
+
+@media (min-width: 577px) {
+.pt-scroll {
+  padding-top: 51px;
+}
+
+.nav-sticky {
+  position: -webkit-sticky;
+  position: sticky !important;
+  min-width: 100%;
+  top: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  transition: all .25s ease-in;
+  z-index: 1;
+}
+}
+
+/* HAMBURGER MENU */
+
+.hamburger {
+cursor: pointer;
+width: 48px;
+height: 48px;
+transition: all 0.25s;
+}
+
+.hamburger__top-bun,
+.hamburger__bottom-bun {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: white;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger_red-top {
+  transform: translateY(-5px) !important;
+}
+
+.hamburger_red-bottom {
+  transform: translateY(3px) !important;
+}
+
+.hamburger_red-top, .hamburger_red-bottom {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  transform: rotate(0);
+  transition: all 0.5s;
+  background: var(--current);
+}
+
+.hamburger:hover [class*="-bun"] {
+background: gray;
+}
+
+.hamburger__top-bun {
+transform: translateY(-5px);
+}
+
+.hamburger__bottom-bun {
+transform: translateY(3px);
+}
+
+.open {
+transform: rotate(90deg);
+transform: translateY(-1px);
+}
+
+.open .hamburger__top-bun {
+transform:
+  rotate(45deg)
+  translateY(0px);
+}
+
+.open .hamburger__bottom-bun {
+transform:
+  rotate(-45deg)
+  translateY(0px);
+}
+
+.bg-green {
+  background-color: #033033;
+}
+
+.text-green-1 {
+  color: #033033;
+}
+
+.text-green {
+  color: #A8DC1F;
+}
+
+#menu a:hover {
+  color: #8ea2a1;
+}
+
+.bg-green-gray {
+  background-color: #8ea2a1;
+}
+
+.bg-green-1 {
+  background-color: #A8DC1F;
+}
+
+.bg-green-2 {
+  background-color: #07443F;
+}
+
+.bg-waiting {
+  background: url("img/wall-waiting.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.bg-success {
+  background: url("../img/wall-success.png");
+  background-size: contain;
+  background-color: #B3D94B;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.hamburger__top-bu, .hamburger__bottom-bu {
+  background: black !important;
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;  
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger__top-bu{
+  transform: translateY(-5px);
+}
+  
+.hamburger__bottom-bu {
+  transform: translateY(3px);
+}
+
+.modal {
+  transition: opacity 0.25s ease;
+  z-index: 1000 !important;    
+  
+}
+
+body.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}
