@@ -12,14 +12,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
 
-:root {
-  --current: #033033;
+body {
+  width: 100%;
+  height: 100%;
 }
-
-.text-light {
-  font-family: 'TTCommons-light', sans-serif !important;
-}
-
 
 p, h2, a, li {
   font-family: 'TTCommons', sans-serif !important;
@@ -32,10 +28,8 @@ span, h1 {
 .logo-red {
   fill: var(--current);
 }
+
 #hero-container {
-  /*background: url(img/cta-hero-1.jpg);
-  background-position: center;
-  background-size: cover;*/
   background-color: white;
 }
 
@@ -136,45 +130,6 @@ transform:
   translateY(0px);
 }
 
-.bg-green {
-  background-color: #033033;
-}
-
-.text-green-1 {
-  color: #033033;
-}
-
-.text-green {
-  color: #A8DC1F;
-} 
-
-.bg-green-gray {
-  background-color: #8ea2a1;
-}
-
-.bg-green-1 {
-  background-color: #A8DC1F;
-}
-
-.bg-green-2 {
-  background-color: #07443F;
-}
-
-.bg-waiting {
-  background: url("img/wall-waiting.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.bg-success {
-  background: url("../img/wall-success.png");
-  background-size: contain;
-  background-color: #B3D94B;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
 .hamburger__top-bu, .hamburger__bottom-bu {
   background: black !important;
   content: '';
@@ -191,15 +146,4 @@ transform:
   
 .hamburger__bottom-bu {
   transform: translateY(3px);
-}
-
-.modal {
-  transition: opacity 0.25s ease;
-  z-index: 1000 !important;    
-  
-}
-
-body.modal-active {
-  overflow-x: hidden;
-  overflow-y: visible !important;
 }

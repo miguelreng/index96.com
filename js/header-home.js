@@ -26,8 +26,9 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     var link = document.getElementById('link-active');
     function myFunction() {
         if (window.pageYOffset > sticky) {
-            document.getElementById("logo-red").src="img/logo.svg";
-            document.getElementById("logo-mb").src="img/logo.svg";
+            document.getElementById("logo-red").src="img/full-logo.svg";
+            document.getElementById("logo-mb").src="img/full-logo.svg";
+            
             header.classList.add("fixed");
             header.classList.add("-webkit-sticky");
             header.classList.add("bg-white");
@@ -36,10 +37,13 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             cta.classList.add("text-green-1");
             cta.classList.remove("border");
             cta.classList.remove("text-shadow-lg");
+
             logo.classList.add("lg:w-8");
             logo.classList.remove("lg:w-16"); 
+
             logoMb.classList.add("w-8");
-            logoMb.classList.remove("w-16");          
+            logoMb.classList.remove("w-32");     
+
             menu.classList.remove("text-shadow-lg");
             menu.classList.add("text-gray-800");
             menu.classList.remove("text-white");
@@ -50,8 +54,9 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             btn2.classList.add("hamburger_red-bottom");
             link.classList.add("text-current");
         } else {
-            document.getElementById("logo-red").src="img/lastfood.svg";
-            document.getElementById("logo-mb").src="img/lastfood.svg";
+            document.getElementById("logo-red").src="img/full-logo.svg";
+            document.getElementById("logo-mb").src="img/full-logo.svg";
+
             header.classList.remove("fixed");
             header.classList.remove("-webkit-sticky");
             header.classList.remove("bg-white");
@@ -60,10 +65,13 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             cta.classList.remove("text-green-1");
             cta.classList.add("border");
             //cta.classList.add("text-shadow-lg");
+
             logo.classList.add("lg:w-16");
-            logo.classList.remove("lg:w-8");   
-            logoMb.classList.remove("w-8");
-            logoMb.classList.add("w-16");            
+            logo.classList.remove("lg:w-8");
+
+            logoMb.classList.remove("w-32");
+            logoMb.classList.add("w-32");          
+
             //menu.classList.add("text-shadow-lg");
             menu.classList.remove("text-gray-800");            
             menu.classList.add("text-white");
