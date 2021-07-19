@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>             
+        <meta charset="utf-8" >
+        <title>Index96 | Design with purpose for the world</title>        
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="manifest" href="img/site.webmanifest">
+        <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">        
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">            
+        <link href="css/style.css" rel="stylesheet" />
+        <script src="js/jquery.min.js"></script>                
+    </head> 
+    <body class="h-screen">	        
+        <header id="header" class="w-full bg-transparent top-0 left-0 z-50  ">
+            <div class="container mx-auto flex flex-wrap px-5 py-2 md:py-4 xl:px-24 md:px-8 md:flex-row items-center">
+                <a href="/" class="flex font-medium items-center text-gray-900 md:mb-0 sm:self-start">
+                    <img class="hidden lg:w-16 xs:w-4" id="logo-red" src="img/full-logo.svg">
+                </a>
+                <a href="/" class="flex-1 font-medium items-center text-gray-900 md:mb-0 sm:self-start">
+                    <img class="md:block w-32" id="logo-mb" src="img/full-logo.svg">
+                </a>
+                <button id="menuBtn" class="flex-2 hamburger block lg:hidden focus:outline-none" type="button" onclick="navToggle();">
+                    <span id="menuBtn1" class="hamburger__top-bu"></span>
+                    <span id="menuBtn2" class="hamburger__bottom-bu"></span>
+                </button>
+                <nav id="menu" class="hidden w-full md:w-auto md:hidden lg:block md:ml-auto md:mr-auto text-gray-700 text-md flex-col sm:flex-row flex flex-wrap items-center justify-center sm:w-auto sm:self-center sm:flex-row sm:py-0 sm:pb-0">                                               
+                    <a href="/" class="mr-8 md:inline-block flex">About us</a>
+                    <a href="/preguntas-frecuentes" class="mr-8 md:inline-block flex">Our work</a>
+                    <a href="/preguntas-frecuentes" class="mr-8 md:inline-block flex">Services</a>
+                    <a href="https://calendly.com/lastfood/restaurantes" class="mr-8 md:inline-block flex">Schedule a call</a>                           
+                </nav>
+                <nav id="menu-mb" class="hidden w-full text-md flex-col sm:flex-row flex flex-wrap items-center text-base justify-center sm:w-auto sm:self-center sm:py-0 sm:pb-0 w-full bg-white mt-4 md:p-0 md:bg-transparent p-4 leading-relaxed rounded">                                               
+                    <a href="/preguntas-frecuentes" class="mr-8 font-medium md:inline-block flex">About us</a>
+                    <a href="/preguntas-frecuentes" class="mr-8 font-medium md:inline-block flex">Our work</a>
+                    <a href="/preguntas-frecuentes" class="mr-8 font-medium md:inline-block flex">Services</a>
+                    <a href="https://calendly.com/lastfood/restaurantes" class="mr-8 font-medium md:inline-block flex">Schedule a call</a>                                                    
+                </nav>
+            </div>
+        </header>                       
+        <section class="text-gray-800">                 
+            <div class="container mx-auto flex py-4 px-5 md:py-12 xl:px-24 md:px-8 md:flex-row flex-col items-center">                 
+                <div class="w-full md:w-3/4 sm:w-full self-start mr-10">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-3">We love design, and software</h1>                                      
+                    <p class="text-md md:text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <h1 class="text-3xl font-bold mt-8">Since 2012, creating digital experiences</h1>
+                </div>
+                <!--<div class="md:w-1/4"><img src="img/header-image2.svg"></div> -->
+            </div>                                 
+        </section>        
+        <div class="bg-gray-50">            
+            <div class="container px-5 py-12 md:px-24 mx-auto">
+                <div class="flex flex-wrap md:text-left text-left -mb-5 -mx-4">                
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h1 class="title-font font-semibold text-gray-900 text-sm mb-3">Blog</h1>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800 font-medium">10 reasons why UX is important for your company</a>
+                            </li>                                                       
+                        </nav>
+                    </div>                    
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h1 class="title-font font-semibold text-gray-900 text-sm mb-3">Company</h1>
+                        <nav class="list-none mb-10">                            
+                            <li>
+                                <a href="/preguntas-frecuentes" class="text-gray-600 hover:text-gray-800 font-medium">About us</a>
+                            </li>
+                            <li>
+                                <a href="https://calendly.com/lastfood/restaurantes" class="text-gray-600 hover:text-gray-800 font-medium">Our work</a>
+                            </li>
+                            <li>
+                                <a href="https://calendly.com/lastfood/restaurantes" class="text-gray-600 hover:text-gray-800 font-medium">Services</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://wa.me/573023415588" class="text-gray-600 hover:text-gray-800 font-medium">Schedule a call</a>
+                            </li>                                                                   
+                        </nav>
+                    </div> 
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h1 class="title-font font-semibold text-gray-900 mb-3 text-sm">Follow us</h1>
+                        <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 font-medium">Instagram</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 font-medium">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 font-medium">Dribbble</a>
+                        </li>                        
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <a href="/"><img src="img/circle-logo.svg" class="w-12 lg:mx-1"></a>
+                        <p class="text-gray-700 md:text-sm xl:text-md leading-tight mt-4">
+                            © 2021 Index96, Inc. Todos los derechos reservados.<br>
+                            We work remotely
+                        </p>                                        
+                    </div>           
+                </div> 
+            </div>                      
+        </div>
+        <script src="js/header-home.js"></script>	                               
+    </body>
+</html>
