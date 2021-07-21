@@ -21,8 +21,12 @@ p, h2, a, li {
   font-family: 'TTCommons', sans-serif !important;
 }
 
-span, h1 {
+span, h1, button {
   font-family: 'Poppins', sans-serif;
+}
+
+.cta-link {
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .logo-red {
