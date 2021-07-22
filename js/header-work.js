@@ -55,7 +55,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             link.classList.add("text-current");
         } else {
             document.getElementById("logo-red").src="../img/full-logo.svg";
-            document.getElementById("logo-mb").src="../img/full-logo.svg";
+            document.getElementById("logo-mb").src="../ img/full-logo.svg";
 
             header.classList.remove("fixed");
             header.classList.remove("-webkit-sticky");
