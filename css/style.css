@@ -1,32 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Poppins:wght@400;500;600;700&display=swap');
-
 @font-face {
-  font-family: 'TTCommons';  
-  src: url('../fonts/TTCommons-Regular.ttf')  format('truetype');
+  font-family: 'Book-Font';  
+  src: url('../fonts/whitneybook.otf')  format('truetype');
 }
 
 @font-face {
-  font-family: 'TTCommons-light';  
-  src: url('../fonts/TTCommons-Light.ttf')  format('truetype');
+  font-family: 'Light-Font';  
+  src: url('../fonts/whitneylight.otf')  format('truetype');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+@font-face {
+  font-family: 'Medium-Font';  
+  src: url('../fonts/whitneymedium.otf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Semibold-Font';  
+  src: url('../fonts/whitneysemibold.otf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Bold-Font';  
+  src: url('../fonts/whitneybold.otf')  format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   width: 100%;
+  margin: 0 auto;
   height: 100%;
+  color: #373e4d;
 }
 
 p, h2, a, li, .pill-tag {
-  font-family: 'TTCommons', sans-serif !important;
+  font-family: 'Book-Font', sans-serif !important;
 }
 
-span, h1, button {
-  font-family: 'Poppins', sans-serif;
+h1 {
+  font-family: 'Semibold-Font', sans-serif;
+}
+
+.bold {
+  font-family: 'Bold-Font', sans-serif;
+}
+
+.semibold {
+  font-family: 'Semibold-Font', sans-serif;
+}
+
+
+.medium {
+  font-family: 'Medium-Font', sans-serif !important;
+}
+
+button {
+  font-family: 'Light-Font', sans-serif;
 }
 
 .cta-link {
-  font-family: 'Poppins', sans-serif !important;
+  background-color: #0E0F2D;
+  font-family: 'Semibold-Font', sans-serif !important;
+}
+
+#company {
+  background-color: #0E0F2D;
 }
 
 .logo-red {

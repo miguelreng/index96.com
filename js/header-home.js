@@ -26,8 +26,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     var link = document.getElementById('link-active');
     function myFunction() {
         if (window.pageYOffset > sticky) {
-            document.getElementById("logo-red").src="img/full-logo.svg";
-            document.getElementById("logo-mb").src="img/full-logo.svg";
+            document.getElementById("logo-red").src="img/full-logo.png";
+            document.getElementById("logo-mb").src="img/full-logo.png";
             
             header.classList.add("fixed");
             header.classList.add("-webkit-sticky");
@@ -54,8 +54,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             btn2.classList.add("hamburger_red-bottom");
             link.classList.add("text-current");
         } else {
-            document.getElementById("logo-red").src="img/full-logo.svg";
-            document.getElementById("logo-mb").src="img/full-logo.svg";
+            document.getElementById("logo-red").src="img/full-logo.png";
+            document.getElementById("logo-mb").src="img/full-logo.png";
 
             header.classList.remove("fixed");
             header.classList.remove("-webkit-sticky");

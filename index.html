@@ -28,73 +28,147 @@
         <header id="header" class="w-full bg-transparent top-0 left-0 z-50  ">
             <div class="container mx-auto flex flex-wrap px-5 py-2 md:py-4 xl:px-24 md:px-8 md:flex-row items-center">
                 <a href="/" class="flex font-medium items-center text-gray-900 md:mb-0 sm:self-start">
-                    <img class="hidden lg:w-16 xs:w-4" id="logo-red" src="img/full-logo.svg">
+                    <img class="hidden lg:w-16 xs:w-4" id="logo-red" src="img/full-logo.png">
                 </a>
-                <a href="/" class="flex-1 font-medium items-center text-gray-900 md:mb-0 sm:self-start">
-                    <img class="md:block w-32" id="logo-mb" src="img/full-logo.svg">
+                <a href="/" class="flex-1 font-medium items-center text-gray-900 md:mb-0 sm:self-center ">
+                    <img class="md:block w-32" id="logo-mb" src="img/full-logo.png">
                 </a>
-                <button id="menuBtn" class="flex-2 hamburger block lg:hidden focus:outline-none" type="button" onclick="navToggle();">
-                    <span id="menuBtn1" class="hamburger__top-bu"></span>
-                    <span id="menuBtn2" class="hamburger__bottom-bu"></span>
-                </button>
-                <nav id="menu" class="hidden w-full md:w-auto md:hidden lg:block md:ml-auto md:mr-auto text-gray-700 text-md flex-col sm:flex-row flex flex-wrap items-center justify-center sm:w-auto sm:self-center sm:flex-row sm:py-0 sm:pb-0">                                               
-                    <a href="/about" class="mr-8 md:inline-block flex hover:underline">About Us</a>
-                    <a href="/work" class="mr-8 md:inline-block flex hover:underline">Our Work</a>
-                    <a href="/services" class="mr-8 md:inline-block flex hover:underline">Services</a>
-                    <a href="https://calendly.com/index96/intromeeting" class="mr-8 md:inline-block flex hover:underline">Schedule a Call</a>                           
-                </nav>
-                <nav id="menu-mb" class="hidden w-full text-md flex-col sm:flex-row flex flex-wrap items-center text-base justify-center sm:w-auto sm:self-center sm:py-0 sm:pb-0 w-full bg-white mt-4 md:p-0 md:bg-transparent p-4 leading-relaxed rounded">                                               
-                    <a href="/about" class="mr-8 font-medium md:inline-block flex">About Us</a>
-                    <a href="/work" class="mr-8 font-medium md:inline-block flex">Our Work</a>
-                    <a href="/services" class="mr-8 font-medium md:inline-block flex">Services</a>
-                    <a href="https://calendly.com/index96/intromeeting" class="mr-8 font-medium md:inline-block flex">Schedule a Call</a>                                                    
-                </nav>
+                <a href="https://calendly.com/index96/intromeeting"><button class="button block lg:hidden bg-transparent border px-8 rounded semibold shadow-sm hover:text-gray-700 text-gray-600 py-3 ">Schedule a Call</button></a>
+                <nav id="menu" class="hidden w-full md:w-auto md:hidden lg:block md:ml-auto md:mr-auto text-gray-700 text-md flex-col sm:flex-row flex flex-wrap items-center justify-center sm:w-auto sm:self-center sm:flex-row sm:py-0 sm:pb-0">                                                                   
+                    <a href="#work" class="mr-8 md:inline-block flex hover:underline">Our Work</a>
+                    <a href="#services" class="mr-8 md:inline-block flex hover:underline">Services</a>
+                    <a href="#company" class="mr-8 md:inline-block flex hover:underline">About Us</a>
+                    <a href="https://calendly.com/index96/intromeeting"><button class="button bg-gray-100 border px-12 rounded semibold shadow-sm hover:text-gray-700 text-gray-600 py-3">Schedule a Call</button></a>
+                </nav>               
             </div>
         </header>                
-        <section class="text-gray-800 bg-red-50">                 
+        <section class="text-gray-800">                 
             <div class="container mx-auto flex py-12 px-5 md:py-24 xl:px-24 md:px-8 md:flex-row flex-col items-center">                 
-                <div class="w-full md:w-3/4 sm:w-full self-start mr-10">
+                <div class="w-full mx-auto text-center md:w-3/4 sm:w-full self-start ">
                     <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-3">We Design Amazing Digital Products</h1>                    
-                    <p class="text-xl text-gray-700">UI/UX design for startups, companies or projects focused on giving value to the world.</p>
-                </div>
-                <div class="md:w-1/4"><a href="https://calendly.com/index96/intromeeting"><button class="button bg-white px-12 rounded font-semibold mt-4 md:mt-0 shadow-sm hover:text-gray-700 text-gray-600 py-4">Schedule a Call</button></a></div>
+                    <p class="text-xl text-gray-700">UI/UX design for startups, companies or projects focused on giving value to the world</p>
+                    <div class="mt-5"><a href="https://calendly.com/index96/intromeeting"><button type="button" class="text-xl px-12 rounded cta-link mt-4 md:mt-0 shadow-sm hover:text-gray-200 text-white py-4">Schedule a Call with Us</button></a></div>
+                </div>                
             </div>                                 
         </section> 
-        <section class="text-gray-700 from-blue-800 to-purple-500 bg-gradient-to-r">                 
-            <div class="container mx-auto flex pt-12 px-5 md:pt-18 xl:px-24 md:px-8 md:flex-row flex-col items-center">                 
-                <div class="w-full md:flex">
-                    <div class="w-full md:w-2/4">
-                        <h1 class="font-semibold text-3xl text-white mb-4">A company specialized in UI/UX design</h1>
-                        <p class="text-white text-xl md:mb-4 leading-tight">We love working on challenging products with amazing teams, we work with startups from all over the world and we love it.</p>                        
-                        <a href="/work" class="cta-link underline text-lg md:text-2xl font-semibold shadow-sm text-white">Our work</a>
-                    </div>                    
-                    <div class="w-full mt-4 md:mt-0 md:w-3/4">
-                        <img src="img/moviebit-header.png" />                
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="text-gray-700">                 
+        <section class="text-gray-700 bg-50">                 
             <div class="container mx-auto flex py-12 px-5 md:py-18 xl:px-24 md:px-8 md:flex-row flex-col items-center">                 
                 <div class="w-full">
-                    <h1 class="text-lg md:text-lg font-semibold leading-tight mb-8 mx-auto text-center">We've worked with</h1>                                        
-                    <div class="flex flex-row">
+                    <h1 class="text-lg md:text-2xl font-semibold leading-tight mb-8 mx-auto text-center">We've worked with</h1>                                        
+                    <div class="flex flex-row md:flex-row">
                         <div class="flex-1">
                             <img src="img/meli.png" class="w-32 mx-auto"/>
                         </div>
                         <div class="flex-1">
                             <img src="data:image/png;base64,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" class="w-32 mx-auto"/>
                         </div>
-                        <div class="flex-1">
+                        <div class="flex-1 hidden md:block">
                             <img src="https://www.instana.com/media/INSTANA-logo.svg" class="w-32 mx-auto"/>
                         </div>
-                        <div class="flex-1">
+                        <div class="flex-1 hidden md:block">
                             <img src="https://www.intuitivo.com/wp-content/uploads/2021/07/IntuitivoAsset-1.svg" class="w-32 mx-auto"/>
                         </div>
                     </div>                
                 </div>                                                                                                 
             </div>                                 
-        </section>            
+        </section>
+        <section class="text-gray-800" id="work">                 
+            <div class="container mx-auto py-4 px-5 md:py-12 xl:px-24 md:px-8 items-center">     
+                <h1 class="text-center text-lg md:text-2xl font-bold leading-tight mb-8">Recent work</h1>                            
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700 text-sm font-semibold">
+                    <div>
+                        <a href="work/nomad">
+                            <img src="img/mnh-cover.jpeg" class="rounded-lg md:rounded-none"/>
+                            <h1 class="mt-2 text-lg font-bold hover:underline">MyNomadHouse.com</h1>
+                            <span class="font-normal text-gray-600">Product design - 2021</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="work/lastfood">
+                            <img src="img/lastfood.png" class="rounded-lg md:rounded-none"/>
+                            <h1 class="mt-2 text-lg font-bold hover:underline">LastFood App</h1>
+                            <span class="font-normal text-gray-600">Product design, UX consulting - 2021</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="work/moviebit">
+                        <img src="img/moviebit.png" class="rounded-lg md:rounded-none"/>
+                            <h1 class="mt-2 text-lg font-bold hover:underline">MovieBit App</h1>
+                            <span class="font-normal text-gray-600">Product design, User research - 2021</span>
+                        </a>
+                    </div>                          
+                    <div>
+                        <a href="work/aleyda">
+                            <img src="img/aleyda.png" class="rounded-lg md:rounded-none"/>
+                            <h1 class="mt-2 text-lg font-bold hover:underline">Aleyda Webapp</h1>
+                            <span class="font-normal text-gray-600">Product design, UX consulting - 2021</span>
+                        </a>    
+                    </div>                        
+                    <div>
+                        <a href="work/poetri">
+                        <img src="img/poetri.png" class="rounded-lg md:rounded-none"/>
+                        <h1 class="mt-2 text-lg font-bold hover:underline">Poetri IDE</h1>
+                        <span class="font-normal text-gray-600">Product design, User research - 2019</span>
+                        </a>
+                    </div>    
+                    <div>
+                        <img src="img/instana.png" class="rounded-lg md:rounded-none"/>
+                        <h1 class="mt-2 text-lg font-bold ">Instana Documentation Site</h1>
+                        <span class="font-normal text-gray-600">Product design - 2020</span>
+                    </div>               
+                </div>             
+            </div>                                 
+        </section> 
+        <section class="text-gray-800 bg-indigo-50" id="services">                 
+            <div class="container mx-auto py-4 px-5 md:py-12 xl:px-24 md:px-8 items-center">     
+                <h1 class="text-center text-lg md:text-2xl font-bold leading-tight">Services</h1>                            
+                <div class="grid grid-cols-1 md:py-10 md:grid-cols-4 gap-4 text-gray-700 text-sm font-semibold">
+                    <div class="p-4 md:p-4 bg-white shadow rounded-lg">      
+                        <img src="img/product.svg" class="w-16 mx-auto"/>                  
+                        <h1 class="mt-2 text-lg text-center">Product Design</h1>
+                        <p class="font-normal text-gray-600 leading-snug text-center">                            
+                            We design powerful digital products with your users in mind. We work as part of your product team from an idea to the release.
+                        </p>
+                    </div>
+                    <div class="p-4 md:p-4 bg-white shadow rounded-lg">      
+                        <img src="img/ux.svg" class="w-16 mx-auto"/>                     
+                        <h1 class="mt-2 text-lg text-center">UX Consulting</h1>
+                        <p class="font-normal text-gray-600 leading-snug text-center"> 
+                            We raise your company's UX maturity by helping you to set the right processes and reshape your product’s strategy.                                                                                   
+                        </p>
+                    </div>
+                    <div class="p-4 md:p-4 bg-white shadow rounded-lg">   
+                        <img src="img/user-research.svg" class="w-16 mx-auto"/>                     
+                        <h1 class="mt-2 text-lg text-center">User Research</h1>
+                        <p class="font-normal text-gray-600 leading-snug text-center">                                                        
+                            We collect valuable user research insights to help you make data-driven and impactful business decisions.
+                        </p>
+                    </div> 
+                    <div class="p-4 md:p-4 bg-white shadow rounded-lg">   
+                        <img src="img/trainning.svg" class="w-16 mx-auto"/>                     
+                        <h1 class="mt-2 text-lg text-center">UX Training for Teams</h1>
+                        <p class="font-normal text-gray-600 leading-snug text-center">                                                        
+                            We hold customized training to help your teams develop a user- centric mindset and incorporate design thinking into your work.
+                        </p>
+                    </div>                                                                           
+                </div>             
+            </div>                                 
+        </section>        
+        <section class="text-gray-700" id="company">                 
+            <div class="container mx-auto flex py-12 px-5 md:py-18 xl:px-24 md:px-8 md:flex-row flex-col items-center">                 
+                <div class="w-full md:flex">
+                    <div class="w-full md:w-2/4 text-white self-center">
+                        <h1 class="semibold text-3xl text-white mb-4">A company specialized in UI/UX design</h1>
+                        <p class="text-white  text-md md:text-lg md:mb-4 leading-tight">We love working on challenging products with amazing teams, we work with startups from all over the world and we love it.</p>                        
+                        <p class="text-md md:text-lg">We are a group of software developers, designers and marketers who have come together to focus on bringing the best possible design to solutions that need to be characterized by it, we work with companies that care about the user.</p>                                            
+                        <a href="https://calendly.com/index96/intromeeting"><button class="button bg-white px-12 rounded semibold mt-4 md:mt-4 shadow-sm hover:text-gray-700 text-gray-600 py-4">Schedule a Call with Us</button></a>
+                    </div>                    
+                    <div class="mt-4 md:mt-0 md:w-2/4 self-center">
+                        <img class="rounded-md w-3/4 md:float-right" src="img/Intro-2.jpg" />                
+                    </div>
+                </div>
+            </div>
+        </section>                                
         <div class="bg-gray-50">            
             <div class="container px-5 py-12 md:px-24 mx-auto">
                 <div class="flex flex-wrap md:text-left text-left -mb-5 -mx-4">                
@@ -110,13 +184,13 @@
                         <h1 class="title-font font-semibold text-gray-900 text-sm mb-3">Company</h1>
                         <nav class="list-none mb-10">                            
                             <li>
-                                <a href="/about" class="text-gray-600 hover:text-gray-800 font-medium">About Us</a>
+                                <a href="#company" class="text-gray-600 hover:text-gray-800 font-medium">About Us</a>
                             </li>
                             <li>
-                                <a href="/work" class="text-gray-600 hover:text-gray-800 font-medium">Our Work</a>
+                                <a href="#work" class="text-gray-600 hover:text-gray-800 font-medium">Our Work</a>
                             </li>
                             <li>
-                                <a href="/services" class="text-gray-600 hover:text-gray-800 font-medium">Services</a>
+                                <a href="#services" class="text-gray-600 hover:text-gray-800 font-medium">Services</a>
                             </li>
                             <li>
                                 <a target="_blank" href="https://calendly.com/index96/intromeeting" class="text-gray-600 hover:text-gray-800 font-medium">Schedule a Call</a>
@@ -140,7 +214,7 @@
                     <div class="lg:w-1/4 md:w-1/2 w-full px-4">
                         <a href="/"><img src="img/circle-logo.svg" class="w-12 lg:mx-1"></a>
                         <p class="text-gray-700 md:text-sm xl:text-md leading-tight mt-4">
-                            © 2021 Index96, Inc. All right reserved.<br>
+                            © 2022 Index96, Inc. All right reserved.<br>
                             We work remotely
                         </p>                                        
                     </div>           
