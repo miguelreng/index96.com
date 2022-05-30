@@ -64,10 +64,6 @@ button {
   font-family: 'Semibold-Font', sans-serif !important;
 }
 
-#company {
-  background-color: #0E0F2D;
-}
-
 .logo-red {
   fill: var(--current);
 }
