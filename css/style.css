@@ -34,7 +34,7 @@ body {
   color: #373e4d;
 }
 
-p, h2, a, li, .pill-tag {
+p, h2, a, span, li, .pill-tag {
   font-family: 'Book-Font', sans-serif !important;
 }
 
