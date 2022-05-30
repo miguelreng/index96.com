@@ -43,7 +43,7 @@ h1 {
 }
 
 .bold {
-  font-family: 'Bold-Font', sans-serif;
+  font-family: 'Bold-Font', sans-serif !important;
 }
 
 .semibold {
