@@ -1,26 +1,31 @@
 @font-face {
   font-family: 'Book-Font';  
-  src: url('../fonts/whitneybook.otf')  format('truetype');
+  src: url('../fonts/CircularStd-Book.ttf')  format('truetype');
 }
 
 @font-face {
   font-family: 'Light-Font';  
-  src: url('../fonts/whitneylight.otf')  format('truetype');
+  src: url('../fonts/CircularStd-Light.otf')  format('opentype');
 }
 
 @font-face {
   font-family: 'Medium-Font';  
-  src: url('../fonts/whitneymedium.otf')  format('truetype');
+  src: url('../fonts/CircularStd-Medium.ttf')  format('truetype');
 }
 
 @font-face {
   font-family: 'Semibold-Font';  
-  src: url('../fonts/whitneysemibold.otf')  format('truetype');
+  src: url('../fonts/CircularStd-Bold.ttf')  format('truetype');
 }
 
 @font-face {
   font-family: 'Bold-Font';  
-  src: url('../fonts/whitneybold.otf')  format('truetype');
+  src: url('../fonts/CircularStd-Bold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Black-Font';  
+  src: url('../fonts/CircularStd-Black.ttf')  format('truetype');
 }
 
 html {
@@ -34,40 +39,45 @@ body {
   color: #373e4d;
 }
 
-p, h2, a, span, li, .pill-tag {
-  font-family: 'Book-Font', sans-serif !important;
+h2, a, span, .pill-tag {
+  font-family: 'Light-Font', sans-serif !important;
+}
+
+p {
+  font-family: 'Light-Font', sans-serif !important;
 }
 
 h1{
-  font-family: 'Semibold-Font', sans-serif;
+  font-family: 'Semibold-Font', sans-serif !important;
 }
 
 .bold {
   font-family: 'Bold-Font', sans-serif !important;
 }
 
-.semibold {
-  font-family: 'Semibold-Font', sans-serif;
+.book {
+  font-family: 'Book-Font', sans-serif !important;
 }
 
+.semibold {
+  font-family: 'Semibold-Font', sans-serif !important;
+}
+
+.black {
+  font-family: 'Black-Font', sans-serif !important;
+}
 
 .medium {
   font-family: 'Medium-Font', sans-serif !important;
 }
 
-button {
-  font-family: 'Light-Font', sans-serif;
-}
-
 .cta-link {
   background-color: #0E0F2D;
-  font-family: 'Semibold-Font', sans-serif !important;
 }
 
 .logo-red {
   fill: var(--current);
 }
-
 
 .size-normal {
   font-size: 16px;
